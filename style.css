@@ -1,0 +1,257 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Space Grotesk;
+  
+}
+
+body {
+  background-color: #330066;
+  color: white;
+  
+}
+
+h1 {
+  font-family: sans-serif;
+  font-size: 6rem;
+  font-weight: 700;
+  
+}
+
+nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: o;
+  padding: 1% 2%;
+  background-color: #330066;
+  
+}
+
+nav ul{
+  display: flex;
+  width: 100%;
+  justify-content: flex-end;
+  align-items: center;
+}
+
+nav li {
+  display: flex;
+  list-style: none;
+  height: 50px;
+  
+  align-items: center;
+  
+}
+
+nav a {
+  text-decoration: none;
+  padding: 0 20px;
+  display: flex;
+  height: 100%;
+  align-items: center;
+  color: white;
+  font-family: space grotesk;
+}
+
+nav li:first-child {
+  margin-right: auto;
+  
+}
+
+
+
+li img {
+  width: 20%;
+  
+  margin-left: -6rem;
+  object-fit: cover;
+  
+}
+
+nav li button {
+  background-color: transparent;
+  color: white;
+  border-style: solid;
+  font-family: Space Grotesk;
+  font-size: 1rem;
+  
+  align-self: center;
+  width: 7rem;
+  padding: 7%;
+  border-width: 1px;
+  border-radius: 5%;
+  border-color: white;
+  
+  
+}
+
+.menu-btn {
+  display: none;
+}
+
+.side-bar {
+  position: fixed;
+  top: 0;
+  right: 0;
+  height: 100vh;
+  width: 100%;
+  z-index: 999;
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-start;
+  width: 100%;
+}
+
+a:hover {
+  color: #1a0033;
+}
+
+section {
+  width: 100%;
+  padding: 0 2.2%;
+  
+  
+}
+
+.hero-section {
+  padding: 0 0 0 2.2%;
+  display: flex;
+  width: 100%;
+  height: 100vh;
+  
+  
+}
+
+.info-text {
+  display: flex;
+  flex-direction: column;
+  flex-basis: 50%;
+  row-gap: 1%;
+  height: auto;
+  justify-content: center;
+  
+}
+
+.info-text span {
+  font-style: italic;
+  font-weight: 500;
+  font-size: 1.2rem;
+}
+
+.info-text p {
+  font-size: 1.3rem;
+}
+
+button {
+  transition: background-color, border-style;
+  transition-duration: 500ms;
+  
+  
+}
+
+
+
+.buttons button {
+  font-size: 1.5rem;
+  margin-right: 1%;
+  border-style: solid;
+  padding: 1% 2%;
+  color: white;
+  background-color: transparent;
+  border-color: white;
+  border-radius: 5%;
+
+}
+
+button:hover {
+  background-color: #2b1121;
+  
+  border-style: none;
+}
+
+
+
+.illustration {
+  
+  display: flex;
+  flex-basis: 50%;
+  align-items: center;
+  justify-content: center;
+}
+
+.illustration img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+.slider {
+  height: 150px;
+  margin: auto;
+  position: relative;
+  display: grid;
+  place-items: center;
+  overflow: hidden;
+  
+}
+
+
+
+
+.carousel-wrapper {
+  display: flex;
+  width: calc(175px * 14);
+  animation: scroll 40s linear infinite;
+  
+}
+
+@keyframes scroll {
+  0% {
+    transform: translateX(0);
+  }
+
+  100% {
+    transform: translateX(calc(-175px * 7));
+  }
+}
+
+.slide {
+  height: 50px;
+  width: 175px;
+  display: flex;
+  align-items: center;
+  padding: 15px;
+}
+
+.slide img {
+  width: 100%;
+}
+
+
+.slider::after,
+.slider::before {
+  background: linear-gradient(to right, rgb(51, 0, 102, 1) 0%, rgb(255, 255, 255, 0)100%);
+  content: "";
+  height: 100%;
+  position: absolute;
+  width: 15%;
+  z-index: 2;
+}
+
+.slider::before {
+  left: 0;
+  top: 0;
+}
+
+.slider::after {
+  right: 0;
+  top: 0;
+  transform: rotateZ(180deg);
+}
+ 
+  
+
+  
